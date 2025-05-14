@@ -121,12 +121,14 @@ Reversed number of 1234 is 4321
 - Display the multiplication results using `DBMS_OUTPUT.PUT_LINE`.
 
 **Expected Output:**  
+
 Multiplication table of 5:  
 5 x 1 = 5  
 5 x 2 = 10  
 5 x 3 = 15  
 ...  
 5 x 10 = 50
+
 
 ## RESULT
 Thus, the PL/SQL programs using procedures and functions were written, compiled, and executed successfully.
