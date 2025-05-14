@@ -1,6 +1,7 @@
 # Experiment 10: PL/SQL – Triggers
 
 ## AIM
+
 To write and execute PL/SQL trigger programs for automating actions in response to specific table events like INSERT, UPDATE, or DELETE.
 
 ---
@@ -9,6 +10,7 @@ To write and execute PL/SQL trigger programs for automating actions in response 
 
 A **trigger** is a stored PL/SQL block that is automatically executed or fired when a specified event occurs on a table or view. Triggers can be used for enforcing business rules, auditing changes, or automatic updates.
 
+
 ### Types of Triggers:
 - **Before Trigger**: Executes before the operation (INSERT, UPDATE, DELETE).
 - **After Trigger**: Executes after the operation.
@@ -16,21 +18,26 @@ A **trigger** is a stored PL/SQL block that is automatically executed or fired w
 - **Statement-level Trigger**: Executes once for the triggering statement.
 
 **Basic Syntax:**
-```sql
+
+```
 CREATE OR REPLACE TRIGGER trigger_name
 BEFORE|AFTER INSERT|UPDATE|DELETE ON table_name
 [FOR EACH ROW]
 BEGIN
    -- trigger logic
 END;
+
 ```
 
 ## 1. Write a trigger to log every insertion into a table.
+
 **Steps:**
+
 - Create two tables: `employees` (for storing data) and `employee_log` (for logging the inserts).
 - Write an **AFTER INSERT** trigger on the `employees` table to log the new data into the `employee_log` table.
 
 **Expected Output:**
+
 - A new entry is added to the `employee_log` table each time a new record is inserted into the `employees` table.
 
 ---
@@ -41,6 +48,7 @@ END;
 - Use `RAISE_APPLICATION_ERROR` to prevent deletion and issue a custom error message.
 
 **Expected Output:**
+
 - If an attempt is made to delete a record from `sensitive_data`, an error message is raised, e.g., `ERROR: Deletion not allowed on this table.`
 
 ---
