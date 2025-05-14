@@ -1,5 +1,6 @@
 # Experiment 9: PL/SQL – Procedures and Functions
 
+
 ## AIM
 To understand and implement procedures and functions in PL/SQL for performing various operations such as calculations, decision-making, and looping.
 
@@ -13,24 +14,29 @@ PL/SQL (Procedural Language/SQL) extends SQL by adding procedural constructs lik
 A PL/SQL **procedure** is a subprogram that performs a specific action. It does not return a value directly but can return values using `OUT` parameters.
 
 **Syntax:**
-```sql
+```
+
 CREATE OR REPLACE PROCEDURE procedure_name (parameters)
 IS
 BEGIN
    -- statements
 END;
+
 ```
 
 To call the procedure
 
-```sql
+```
+
 EXEC procedure_name(arguments);
+
 ```
 
 ### **Function**
 A PL/SQL **function** is a subprogram that returns a single value using the RETURN keyword.
 
-```sql
+```
+
 CREATE OR REPLACE FUNCTION function_name (parameters)
 RETURN datatype
 IS
