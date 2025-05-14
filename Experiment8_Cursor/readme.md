@@ -25,7 +25,8 @@ Types of Explicit Cursors:
 5. Cursor with FOR UPDATE: Used for row-level locking and updating the rows while looping.
 
 **Syntax:**
-```sql
+```
+
 DECLARE 
    <declarations section> 
 BEGIN 
@@ -33,6 +34,7 @@ BEGIN
 EXCEPTION 
    <exception handling> 
 END;
+
 ```
 
 ### Basic Components of PL/SQL Block:
@@ -51,7 +53,8 @@ PL/SQL provides a robust mechanism to handle runtime errors using exception hand
 - User-defined Exceptions: Declared explicitly in the declaration section using the EXCEPTION keyword.
 - WHEN OTHERS: A generic handler for all exceptions not handled explicitly.
 
-```sql
+```
+
 BEGIN
    -- Statements
 EXCEPTION
@@ -60,6 +63,7 @@ EXCEPTION
    WHEN OTHERS THEN
       -- Handling for unknown errors
 END;
+
 ```
 
 ### **Question 1: Simple Cursor with Exception Handling**
